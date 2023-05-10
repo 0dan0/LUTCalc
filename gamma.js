@@ -274,28 +274,28 @@ LUTGamma.prototype.gammaList = function() {
 	this.gammaExt.push(true);
 	
 	this.gammas.push(new LUTGammaLog(
-		'GoPro Protune', [ 0,0, 876/1023, 53.39427221, 113, 64/1023, 1, 0, 0 ]));
+		'Protune', [ 0,0, 876/1023, 53.39427221, 113, 64/1023, 1, 0, 0 ]));
 	this.gammaSub.push([this.subIdx('GoPro'),this.subIdx('Log')]);
 	this.gts.push('*');
 	this.gammaDat.push(false);
 	this.gammaExt.push(false);
 	
 	this.gammas.push(new LUTGammaLog(
-		'GoPro Log 113', [ 0,0, 1023/1023, 64.0, 113, 0/1023, 1, 0, 0 ])); 
+		'GoPro Log 113', [ 0,0, 1023/1023, 112, 113, 0/1023, 1, 0, 0 ])); 
 	this.gammaSub.push([this.subIdx('GoPro'),this.subIdx('Log')]);
 	this.gts.push('*');
 	this.gammaDat.push(false);
 	this.gammaExt.push(false);
 	
 	this.gammas.push(new LUTGammaLog(
-		'GoPro Log 400', [ 0,0, 1023/1023, 64.0, 400, 0/1023, 1, 0, 0 ])); 
+		'GoPro Log 400', [ 0,0, 1023/1023, 399, 400, 0/1023, 1, 0, 0 ])); 
 	this.gammaSub.push([this.subIdx('GoPro'),this.subIdx('Log')]);
 	this.gts.push('*');
 	this.gammaDat.push(false);
 	this.gammaExt.push(false);
 	
 	this.gammas.push(new LUTGammaLog(
-		'GoPro Log 1.0', [ 0,0, 1023/1023, 64.0, 1.0, 0/1023, 1, 0, 0 ])); 
+		'GoPro Log 1.0', [ 0,0, 1023/1023, 0.01, 1.01, 0/1023, 1, 0, 0 ])); 
 	this.gammaSub.push([this.subIdx('GoPro'),this.subIdx('Log')]);
 	this.gts.push('*');
 	this.gammaDat.push(false);
