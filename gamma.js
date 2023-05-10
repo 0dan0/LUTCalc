@@ -295,7 +295,14 @@ LUTGamma.prototype.gammaList = function() {
 	this.gammaExt.push(false);
 	
 	this.gammas.push(new LUTGammaLog(
-		'GoPro Log 1.0', [ 0,0, 876/1023, 0.01, 1.01, 64/1023, 1, 0, 0 ])); 
+		'GoPro Log 1000', [ 0,0, 876/1023, 999, 1000, 64/1023, 1, 0, 0 ])); 
+	this.gammaSub.push([this.subIdx('GoPro'),this.subIdx('Log')]);
+	this.gts.push('*');
+	this.gammaDat.push(false);
+	this.gammaExt.push(false);
+	
+	this.gammas.push(new LUTGammaLog(
+		'GoPro Log 1.0', [ 0,0, 876/1023, 0.0001, 1.0001, 64/1023, 1, 0, 0 ])); 
 	this.gammaSub.push([this.subIdx('GoPro'),this.subIdx('Log')]);
 	this.gts.push('*');
 	this.gammaDat.push(false);
