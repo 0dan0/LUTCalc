@@ -272,8 +272,16 @@ LUTGamma.prototype.gammaList = function() {
 	this.gts.push('Rec709');
 	this.gammaDat.push(true);
 	this.gammaExt.push(true);
+	
 	this.gammas.push(new LUTGammaLog(
 		'Protune', [ 0,0, 876/1023, 53.39427221, 113, 64/1023, 1, 0, 0 ]));
+	this.gammaSub.push([this.subIdx('GoPro'),this.subIdx('Log')]);
+	this.gts.push('*');
+	this.gammaDat.push(false);
+	this.gammaExt.push(false);
+	
+	this.gammas.push(new LUTGammaLog(
+		'GoProLog 113', [ 0,0, 1023/1023, 54, 113, 0/1023, 1, 0, 0 ]));
 	this.gammaSub.push([this.subIdx('GoPro'),this.subIdx('Log')]);
 	this.gts.push('*');
 	this.gammaDat.push(false);
